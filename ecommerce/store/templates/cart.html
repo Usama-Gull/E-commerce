@@ -1,0 +1,84 @@
+{% extends 'header_footer.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container text_gold">
+  <div class="row mt-4">
+    <h3>Cart</h3>
+
+  </div>
+  <div class="row mt-2 ml-4 display_none">
+    <div class="col-lg-2 col-md-2 col-2">
+      <h5>Image</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 col-2">
+      <h5>Product</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 col-2">
+      <h5 >Price</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 col-2">
+      <h5>Quantity</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 col-2">
+      <h5>Action</h5>
+    </div>
+    <div class="col-lg-2 col-md-2 col-2">
+      <h5>Total</h5>
+    </div>
+
+
+  </div>
+
+  <hr class="custom_hr ">
+  <div class="row mt-2 ml-4 font_size_ipad2">
+    <div class="col-lg-2 col-md-2 col-12">
+      <img class="cart_img" src="../static/asset/images/img1%20(3).jpg" alt="img" width="50%" >
+    </div>
+    <div class="col-lg-2 col-md-2 mt-4 col-12">
+      <h2>Dress</h2>
+    </div>
+    <div class="col-lg-2 mt-4 col-md-2 col-12">
+      <h2 >130.00$</h2>
+    </div>
+    <div class="col-lg-2 mt-4 col-md-2 col-10">
+      <input type="number" class=" form-control btn-light" id="quantity" name="quantity" value="1" min="1" max="5">
+    </div>
+    <div class="col-lg-2 mt-4 col-md-2 col-6">
+      <i class="far fa-times-circle fa-2x"></i>
+    </div>
+    <div class="col-lg-2 mt-4 col-md-2 col-6 ">
+      <h2 >130.00$</h2>
+    </div>
+
+
+  </div>
+  <hr class="custom_hr ">
+  <div class="row font_size_ipad2">
+    <div class="col-lg-10  col-md-10 col-6"></div>
+    <div class="col-lg-2  col-md-2 col-4 margin_left_cart">
+      <h2 class="ml-2">130.00$</h2>
+    </div>
+  </div>
+  <div class="row mt-3 mb-2">
+    <div class="col-lg-3  col-md-4 col-12">
+      <a href="Product_page.html">
+      <button type="button" href="#" class="btn btn-light  btn-block">Continue Shopping</button>
+        </a>
+    </div>
+    <div class="col-lg-6  col-md-5 "></div>
+    <div class="col-lg-3  col-md-3 mt_mobile_3 col-12">
+       <a href="checkout.html">
+      <button type="button" href="#" class="btn btn-light  btn-block">Checkout</button>
+       </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+{% endblock  %}

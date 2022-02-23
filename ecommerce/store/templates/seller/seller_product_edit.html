@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../static/asset/css/style.css">
+    <script src="https://kit.fontawesome.com/81f686e84d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+</head>
+<body>
+<!--navbar start-->
+<div class="bg1">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="Seller_home.html"><img class="logo" src="../../static/asset/images/Logo.png" width="35%"  >  </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100">
+
+
+
+
+                <li class="nav-item dropdown mt-3 padding_seller">
+                    <button class="btn-light btn">256$</button>
+                </li>
+
+
+
+
+
+                <li class="nav-item dropdown mt-3 ">
+                    <a class="nav-link  grey_text_web" href="#" id="profile" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                        My Account
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="profile">
+                        <a class="dropdown-item" href="../login.html">Login</a>
+                        <a class="dropdown-item" href="seller_edit_profile.html">Edit Profile</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light ">
+
+<a class="navbar-brand ml_5" href=""><img class="img_seller_brand" src="../../static/asset/images/3.png" width="30%"  >  </a>
+
+
+        <ul class="navbar-nav mr-auto ">
+
+
+
+
+            <li class="nav-item ">
+                <a class="nav-link text-center custom_padding_ele mt-3" ><h2>ELEGANT</h2></a>
+            </li>
+
+
+
+
+
+
+
+        </ul>
+
+
+</nav>
+<div class="bg1">
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent_2"
+            aria-controls="navbarSupportedContent_2" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent_2">
+            <ul class="navbar-nav mr-auto w-100 mg-left-seller">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="Seller_home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="seller_product_edit.html">Product </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="order_history.html">Orders</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="Seller_earnings.html">Earnings</a>
+                </li>
+
+
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+</div>
+<!--navbar end-->
+<div class="container text_gold mt-5">
+   <div class="row">
+        <div class="col-lg-9 col-xl-10 col-md-8 ">
+
+        </div>
+        <div class="col-lg-3 col-xl-2 col-md-4 col-12">
+            <a href="Seller_add_product.html" class="btn btn-light  btn-block">Add New Product</a>
+        </div>
+
+    </div>
+<div class="table-responsive">
+    <table class=" mt-4 table table-striped table-dark text_gold ">
+        <thead>
+        <tr>
+            <th class=""></th>
+            <th scope="col">Order</th>
+            <th scope="col">Order</th>
+            <th scope="col">Order</th>
+            <th scope="col">Order</th>
+            <th class="w-17" scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <button type="button"  data-toggle="modal" data-target="#exampleModal" class="btn btn-light  ">Edit</button></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <button type="button"  data-toggle="modal" data-target="#exampleModal" class="btn btn-light  ">Edit</button></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td> <button type="button"  data-toggle="modal" data-target="#exampleModal" class="btn btn-light  ">Edit</button></td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="row mt-5 mb-5 font_size_ipad">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
+                <img src="../../static/asset/images/Logo.png" width="35%"  >
+                <p class="mt-2">Subscribe to our newsletter</p>
+                <form>
+                    <div class="row">
+                        <div class="col-md-8 pr-0 col-8">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-4 pl_0">
+                            <button type="submit" class="btn btn-dark btn-block width_block ">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-1 col-lg-1 col-md-1"> </div>
+            <div class="col-xl-2 col-lg-2 font-weight-bold mt-3 col-md-2 col-3">
+
+                <h3>Shopping</h3>
+
+                <a href="Product_page.html">
+                    <p class="text-white">Products</p>
+                </a>
+                <a href="cart.html">
+                    <p class="text-white">Cart</p>
+                </a>
+
+            </div>
+            <div class="col-xl-2 col-lg-2 font-weight-bold mt-3 col-md-2 col-3">
+                <h3>Account</h3>
+                <a href="login.html">
+                    <p class="text-white">Login</p>
+                </a>
+                <a href="Register.html">
+                    <p class="text-white">Sign-up</p>
+                </a>
+                <a href="seller/seller_register.html">
+                    <p class="text-white">Become a Seller</p>
+                </a>
+
+            </div>
+            <div class="col-xl-3 col-lg-3 font-weight-bold mt-3 col-md-3 col-6">
+                <h3>Customer Support</h3>
+                <p >FAQ</p>
+                <p >Help</p>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="bg1">
+        <div class="container-fluid">
+            <div class="row pt-3 footer_text">
+                <div class="col-xl-3 mt-3 col-lg-3 col-md-3 col-6">
+                    <p>Copyright All right Reserved.</p>
+                </div>
+                <div class="col-xl-2 mt-3 col-lg-2 col-md-2 col-6">
+                    <p>Terms & Conditions</p>
+
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-6 text_center">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4  text_center col-4">
+                            <p><i class="fab fa-facebook-f fa-2x"></i></p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-4  text_center col-4">
+                            <p><i class="fab fa-instagram fa-2x "></i></p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 mt-3 col-lg-2 col-md-2 col-6 ">
+                    <p>Privacy Policy</p>
+
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-12 text_center mt_mobile_3">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-4">
+                            <i class="fab fa-cc-visa fa-2x"></i>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-4">
+                            <i class="fab fa-cc-mastercard fa-2x"></i>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-4">
+                            <i class="fab fa-paypal fa-2x"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,173 @@
+{% extends 'header_footer.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container text_gold">
+    <div class="row mt-4">
+        <h3>Checkout</h3>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <h2>Billing Details</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="fn">First Name</label>
+                        <input type="text" class="form-control bg-dark" id="fn" aria-describedby="fn">
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="ln">Last Name</label>
+                        <input type="text" class="form-control bg-dark" id="ln" aria-describedby="ln">
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control bg-dark" id="email" aria-describedby="email">
+                </div>
+                    </div>
+
+            </div>
+
+
+            <div class="form-group">
+                <label for="coun">Country</label>
+                <select class="form-control bg-dark text_gold" id="coun">
+                    <option>England</option>
+                    <option>Usa</option>
+                    <option>Austria</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Ad">Address</label>
+                <input type="text" class="form-control bg-dark" id="ad" aria-describedby="ad">
+            </div>
+            <div class="form-group">
+                <label for="city">Town/City</label>
+                <input type="text" class="form-control bg-dark" id="city" aria-describedby="fn">
+            </div>
+            <div class="form-group">
+                <label for="State">State</label>
+                <input type="text" class="form-control bg-dark" id="State" aria-describedby="fn">
+            </div>
+            <div class="form-group">
+                <label for="pcode">Postal code</label>
+                <input type="text" class="form-control bg-dark" id="pcode" aria-describedby="fn">
+            </div>
+            <div class="card bg-dark p-3 border card bg-dark p-3 border mt_ipad_5">
+                <h5>Card</h5>
+                <div class="form-group">
+
+                    <input type="text" class="form-control bg-dark border-left-0 border-top-0 border-right-0" placeholder="Card Number                                                   4242424242424242">
+                    <input type="text" class="form-control bg-dark border-left-0 border-top-0 border-right-0" placeholder="MM/YY                                                                           2/2020">
+                    <input type="text" class="form-control bg-dark border-left-0 border-top-0 border-right-0" placeholder="CVC                                                                                 020">
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-lg-6 col-md-12 mt_ipad_5">
+            <div class="card bg-dark p-3 border">
+                <div class="row mt-3">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6 col-md-6 col-6">
+                        <h5>Product</h5>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-6">
+                        <h5>Total</h5>
+                    </div>
+                </div>
+                <hr class="custom_hr">
+                <div class="row mt-3">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6 col-md-6 col-6">
+                        <h5>Dress 1X1</h5>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-6">
+                        <h5>130.00$</h5>
+
+                    </div>
+
+                </div>
+                <hr class="custom_hr mt-5">
+                <div class="row mt-3">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6 col-md-6 col-6">
+                        <h5>Subtotal</h5>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-6">
+                        <h5>130.00$</h5>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6 col-md-6 col-6">
+                        <h5>Shipping</h5>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-6">
+                        <h5>Adress..</h5>
+
+                    </div>
+
+                </div>
+                <hr class="custom_hr mt-5">
+                <div class="row mt-3">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6 col-md-6 col-6">
+                        <h5>Total</h5>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-5">
+                        <h5>130.00$</h5>
+
+                    </div>
+
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 col-md-6 col-6">
+
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-6">
+                        <button type="button" href="#" class="btn btn-light  btn-block">Place Order</button>
+
+                    </div>
+
+                </div>
+                <div class="row mt-5 text-center">
+
+                    <div class="col-lg-4 col-md-4 col-4">
+                        <i class="fab fa-cc-visa fa-2x"></i>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-4">
+                        <i class="fab fa-cc-mastercard fa-2x"></i>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-4">
+                        <i class="fab fa-paypal fa-2x"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+{% endblock  %}

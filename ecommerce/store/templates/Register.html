@@ -1,0 +1,91 @@
+{% extends 'header_footer.html' %}
+{% load static %}
+
+{% block content %}
+<div class="bg_register">
+    <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+
+            <div class="col-xl-5 col-lg-5 col-md-8 col-12 ">
+                <div class="card bg-dark  text-white shadow">
+
+                    <div class="card-body mt-5 mb-5">
+                        <h1 class="card-title text-center">Register</h1>
+                        <form>
+                            <div class="form-group mt-5">
+                                <input type="text" class="form-control"   placeholder="Enter Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control"  placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <select class="form-control " >
+                                             <option class="" selected disabled>Country</option>
+                                            <option>Pakistan</option>
+                                            <option>Usa</option>
+                                            <option>Norway</option>
+                                            <option>Germany</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group" >
+                                        <select class="form-control " >
+                                            <option class=""  selected disabled>City</option>
+                                            <option>Lahore</option>
+                                            <option>Persahwar</option>
+                                            <option>..</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="form-group ">
+                                <input type="text" class="form-control"   placeholder="Enter Address">
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-5  col-lg-5 col-md-6 col-6">
+                                  <a href="seller/seller_register.html">
+                                    <p class="text_white">Become a Seller</p>
+                                      </a>
+                                </div>
+                                <div class="col-lg-2 col-xl-2 col-lg-2 col-md-2 col-1">
+
+                                </div>
+                                <div class="col-xl-5 col-lg-5 col-md-4 col-5">
+                                    <a href="login.html">
+
+                                    <p class="text-right text_white">Already a User</p>
+                                        </a>
+                                </div>
+
+                            </div>
+
+
+                        </form>
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-lg-5 ">
+
+                                <a href="login.html" class="btn btn-light mb-5 btn-block ">Register</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock  %}
