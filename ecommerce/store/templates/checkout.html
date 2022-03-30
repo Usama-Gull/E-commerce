@@ -90,17 +90,19 @@
                     </div>
                 </div>
                 <hr class="custom_hr">
+                {% for item in items %}
                 <div class="row mt-3">
                     <div class="col-lg-1"></div>
                     <div class="col-lg-6 col-md-6 col-6">
-                        <h5>Dress 1X1</h5>
+                        <h5>{{ item.product.name }}  &#215 {{ item.quantity}}</h5>
                     </div>
                     <div class="col-lg-5 col-md-5 col-6">
-                        <h5>130.00$</h5>
+                        <h5>${{ item.get_total }} </h5>
 
                     </div>
 
                 </div>
+                {% endfor %}
                 <hr class="custom_hr mt-5">
                 <div class="row mt-3">
                     <div class="col-lg-1"></div>
@@ -108,22 +110,22 @@
                         <h5>Subtotal</h5>
                     </div>
                     <div class="col-lg-5 col-md-5 col-6">
-                        <h5>130.00$</h5>
+                        <h5>${{ order.get_cart_total|floatformat:2 }}</h5>
 
                     </div>
 
                 </div>
-                <div class="row">
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-6 col-md-6 col-6">
-                        <h5>Shipping</h5>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-6">
-                        <h5>Adress..</h5>
-
-                    </div>
-
-                </div>
+{#                <div class="row">#}
+{#                    <div class="col-lg-1"></div>#}
+{#                    <div class="col-lg-6 col-md-6 col-6">#}
+{#                        <h5>Shipping</h5>#}
+{#                    </div>#}
+{#                    <div class="col-lg-5 col-md-5 col-6">#}
+{#                        <h5>Adress..</h5>#}
+{##}
+{#                    </div>#}
+{##}
+{#                </div>#}
                 <hr class="custom_hr mt-5">
                 <div class="row mt-3">
                     <div class="col-lg-1"></div>
@@ -131,7 +133,7 @@
                         <h5>Total</h5>
                     </div>
                     <div class="col-lg-5 col-md-5 col-5">
-                        <h5>130.00$</h5>
+                        <h5>${{ order.get_cart_total|floatformat:2 }}</h5>
 
                     </div>
 

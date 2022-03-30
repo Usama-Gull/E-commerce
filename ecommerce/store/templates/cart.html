@@ -32,33 +32,36 @@
   </div>
 
   <hr class="custom_hr ">
+    {% for item in items %}
   <div class="row mt-2 ml-4 font_size_ipad2">
     <div class="col-lg-2 col-md-2 col-12">
-      <img class="cart_img" src="../static/asset/images/img1%20(3).jpg" alt="img" width="50%" >
+      <img class="cart_img" src="{{item.product.imageUrl}}" alt="img" width="50%" >
     </div>
     <div class="col-lg-2 col-md-2 mt-4 col-12">
-      <h2>Dress</h2>
+      <h2>{{item.product.name}}</h2>
     </div>
     <div class="col-lg-2 mt-4 col-md-2 col-12">
-      <h2 >130.00$</h2>
+      <h2 >${{item.product.price}}</h2>
     </div>
     <div class="col-lg-2 mt-4 col-md-2 col-10">
-      <input type="number" class=" form-control btn-light" id="quantity" name="quantity" value="1" min="1" max="5">
+{#        <h2>{{ item.quantity }}</h2>#}
+      <input type="number" class=" form-control btn-light" id="quantity" name="quantity" value="{{ item.quantity }}" min="1" max="5">
     </div>
     <div class="col-lg-2 mt-4 col-md-2 col-6">
       <i class="far fa-times-circle fa-2x"></i>
     </div>
     <div class="col-lg-2 mt-4 col-md-2 col-6 ">
-      <h2 >130.00$</h2>
+      <h2 >${{ item.get_total }}</h2>
     </div>
 
 
   </div>
+    {% endfor %}
   <hr class="custom_hr ">
   <div class="row font_size_ipad2">
     <div class="col-lg-10  col-md-10 col-6"></div>
     <div class="col-lg-2  col-md-2 col-4 margin_left_cart">
-      <h2 class="ml-2">130.00$</h2>
+      <h2 class="ml-2">${{ order.get_cart_total|floatformat:2}}</h2>
     </div>
   </div>
   <div class="row mt-3 mb-2">
