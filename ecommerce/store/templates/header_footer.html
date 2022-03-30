@@ -22,6 +22,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
           rel="stylesheet">
+    <style>
+
+
+    </style>
+    <script>
+        var user = '{{ request.user }}'
+        function gettoken(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        const csrftoken = gettoken('csrftoken');
+    </script>
 
 
 </head>
@@ -133,16 +156,18 @@
                 <a class="nav-link text-white " href="cart.html" id="cart" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-shopping-cart fa-lg "></i>
+                     <p id="cart-total">{{ cartitems }}</p>
                 </a>
                 <div class="dropdown-menu dropdown-left bg-dark text-white" aria-labelledby="cart">
+                    {% for item in items %}
                     <div class="row mt-2">
                         <div class="col-xl-5 col-lg-5 col-md-5 col-5">
-                            <img src="{% static 'asset/images/img1%20(3).jpg' %}" alt="img" width="100%" >
+                            <img src="{{item.product.imageUrl}}" alt="img" width="100%" >
 
                         </div>
                         <div class="col-xl-5 mt-4 col-lg-5 col-md-5 col-5">
-                            <h5>Dress</h5>
-                            <p>1X130.00$</p>
+                            <h5>{{item.product.name}}</h5>
+                            <p>{{ item.quantity}} &#215 ${{item.product.price}}</p>
 
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2 col-2">
@@ -152,6 +177,7 @@
 
 
                     </div>
+                    {% endfor %}
                     <hr class="custom_hr">
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-4 col-4">
@@ -160,7 +186,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-4 col-4"></div>
                         <div class="col-xl-4 col-lg-4 col-md-4 col-4">
-                            <p class="mb-0">130.00$</p>
+                            <p class="mb-0">${{ order.get_cart_total|floatformat:2}}</p>
 
                         </div>
 
@@ -197,7 +223,7 @@
     <div class="container-fluid">
         <div class="row mt-5 mb-5 font_size_ipad">
             <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-                <img src="{% static 'static/asset/images/Logo.png' %}" width="35%"  >
+                <img src="{% static 'asset/images/Logo.png' %}" width="35%"  >
                 <p class="mt-2">Subscribe to our newsletter</p>
                 <form>
                     <div class="row">
@@ -296,7 +322,7 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="{% static 'asset/js/cart.js' %}"></script>
 </body>
 <script>
     $(".btn3").on("click", function () {

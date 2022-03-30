@@ -126,8 +126,8 @@
                         <h4 class="card-title font-weight-bold mb-0">{{product.name}}</h4>
                         <p class="mb-0">Women Navy Blue Paisley</p>
                         <p class="text-center mb-0">{{product.price|floatformat:2}}$</p>
-                        <a href="cart.html">
-                            <button type="button" class="btn2 btn-dark btn-block">Add to Cart</button>
+                        <a >
+                            <button type="button" data-product="{{ product.id }}" data-action="add" class="btn2 btn-dark btn-block update-cart">Add to Cart</button>
                         </a>
 
 

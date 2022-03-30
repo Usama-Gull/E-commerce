@@ -3,7 +3,20 @@ body {
     color:white !important;
     background-color: #2b2b2b !important;
 }
-
+ #cart-total{
+	display: block;
+    text-align: center;
+    color: #232323;
+    background-color: white;
+    width: 21px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-top: -36px;
+    z-index: 0;
+    margin-left: 14px;
+    position: relative;
+}
 .bg_suppiler{
     background-color: #232323;
 }
